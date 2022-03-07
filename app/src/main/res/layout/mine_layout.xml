@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="162dp">
+
+            <ImageView
+                android:id="@+id/image_album"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:src="@drawable/hide_image"
+                app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/all_music_container"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/all_music_img"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/all_music" />
+
+                    <TextView
+                        android:id="@+id/all_music_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/all_music_img"
+                        android:gravity="center"
+                        android:text="全部音乐"
+                        android:textColor="@color/color_black"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/favorite_music_container"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/favorite_music_img"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/hasfav" />
+
+                    <TextView
+                        android:id="@+id/fav_music_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/favorite_music_img"
+                        android:gravity="center"
+                        android:text="收    藏"
+                        android:textColor="@color/color_black"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rec_music_container"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/recent_music_img"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/play_history" />
+
+                    <TextView
+                        android:id="@+id/rec_music_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/recent_music_img"
+                        android:gravity="center"
+                        android:text="最近播放"
+                        android:textColor="@color/color_black"
+                        />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/music_vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+</LinearLayout>

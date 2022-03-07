@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">逸帆音乐</string>
+    <string name="app_slogan">让时光充满音乐</string>
+
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+
+    <!--开启通知栏Dialog-->
+    <string name="fri_reminder">友情提醒</string>
+    <string name="set">设置</string>
+    <string name="notification">通知未开启，点击设置跳转开启通知</string>
+
+    <string name="loading">loading...</string>
+
+    <string name="transition_cover">CoverTransition</string>
+</resources>

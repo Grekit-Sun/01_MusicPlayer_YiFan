@@ -1,0 +1,23 @@
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter = "true"
+    >
+
+    <!--360旋转-->
+<rotate
+    android:fromDegrees="0"
+    android:toDegrees="359"
+    android:duration = "10000"
+    android:repeatCount="-1"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    />
+    <!--fromDegress  toDegress  代表从 0到359度  开始旋转（若设置成360在停止时会出现停顿现象-->
+    <!--旋转中心距离View的左边缘为50%距离，距离View的上边缘为50%距离，即正中心。
+
+        repeatCount 代表重复次数  -1  就是无限重复-->
+    <!--fillAfter表示动画结束时，停留在动画的最后一帧即可-->
+
+
+    <!--在动画效果的xml中，在set标签中加上一条android:fillAfter="true" 表示动画结束时，停留在动画的最后一帧即可。
+注意此句不要放在如<alpha>标签中，否则没有作用。-->
+    </set>

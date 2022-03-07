@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorAppTheme</item>
+        <!--状态栏-->
+        <item name="colorPrimaryDark">@color/colorAppTheme</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorAppTheme</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+
+        <item name="android:windowBackground">@color/colorSplashTheme</item>
+
+    </style>
+
+    <style name="NavigationTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+
+</resources>
